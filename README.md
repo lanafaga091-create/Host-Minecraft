@@ -1,4 +1,4 @@
-File ini sama persis dengan yang sudah saya berikan sebelumnya. Berikut urutan lengkap cara menjalankannya di Termux, dari nol sampai panel bisa dibuka:
+$File ini sama persis dengan yang sudah saya berikan sebelumnya. Berikut urutan lengkap cara menjalankannya di Termux, dari nol sampai panel bisa dibuka:
 1. Update Termux & install paket dasar
 Kode
 pkg update && pkg upgrade -y
@@ -38,7 +38,7 @@ Kode
 http://localhost:3000
 Ini sesuai dengan progress kamu sebelumnya — kamu sudah sampai step 5-6 sepertinya. Kalau mau lanjut dari titik terakhir, coba jalankan lagi ./php PocketMine-MP.phar dari folder ~/Host-Minecraft/pocketmine dan kirim screenshot kalau ada error.
 
-Ini errornya wajar — file index.html, script.js, style.css itu sudah ada di dalam folder public/ sejak awal (dari struktur zip aslinya), jadi command mv yang saya kasih tadi gak perlu dijalankan lagi. Kamu sudah otomatis nyalin strukturnya dengan benar lewat cp -r.
+$ errornya wajar — file index.html, script.js, style.css itu sudah ada di dalam folder public/ sejak awal (dari struktur zip aslinya), jadi command mv yang saya kasih tadi gak perlu dijalankan lagi. Kamu sudah otomatis nyalin strukturnya dengan benar lewat cp -r.
 Cek dulu untuk pastikan:
 Kode
 ls public
@@ -54,7 +54,7 @@ Kode
 chmod +x php
 Coba jalankan ls public dulu dan kirim hasilnya, biar saya pastikan sebelum lanjut ke step PHP.
 
-Errornya karena folder pocketmine sudah ada dari percobaan sebelumnya, jadi mkdir pocketmine && cd pocketmine gagal duanya (mkdir gagal → cd ikut gak jalan karena pakai &&). Makanya kamu masih di folder ~/Host-Minecraft, bukan di ~/Host-Minecraft/pocketmine — itu sebabnya chmod +x php bilang "No such file or directory".
+$ Errornya karena folder pocketmine sudah ada dari percobaan sebelumnya, jadi mkdir pocketmine && cd pocketmine gagal duanya (mkdir gagal → cd ikut gak jalan karena pakai &&). Makanya kamu masih di folder ~/Host-Minecraft, bukan di ~/Host-Minecraft/pocketmine — itu sebabnya chmod +x php bilang "No such file or directory".
 Perbaikannya, jalankan ini:
 Kode
 cd pocketmine
@@ -73,8 +73,7 @@ Ekstrak, ambil file bin/php, pindahkan ke folder ~/Host-Minecraft/pocketmine den
 Lalu chmod +x php
 Coba jalankan cd pocketmine lalu ls, dan kirim hasilnya ke saya.
 
-Mantap, ini berhasil! 🎉 Server PocketMine-MP kamu sudah nyala dengan sukses:
-Done (2.935s)! For help, type "help" or "?" → server sudah jalan dan siap dipakai
+$ Done (2.935s)! For help, type "help" or "?" → server sudah jalan dan siap dipakai
 Network interface aktif di port 19132 (dan 19133 untuk IPv6)
 Game mode default: Survival
 Ini adalah proses jalan manual pertama kali (step 5) yang harus dilakukan sebelum pakai panel. Sekarang tinggal lanjut:
