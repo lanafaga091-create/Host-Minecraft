@@ -38,7 +38,7 @@ Kode
 http://localhost:3000
 Ini sesuai dengan progress kamu sebelumnya — kamu sudah sampai step 5-6 sepertinya. Kalau mau lanjut dari titik terakhir, coba jalankan lagi ./php PocketMine-MP.phar dari folder ~/Host-Minecraft/pocketmine dan kirim screenshot kalau ada error.
 
-Ini errornya wajar — file index.html, script.js, style.css itu sudah ada di dalam folder public/ sejak awal (dari struktur zip aslinya), jadi command mv yang saya kasih tadi gak perlu dijalankan lagi. Kamu sudah otomatis nyalin strukturnya dengan benar lewat cp -r.
+errornya wajar — file index.html, script.js, style.css itu sudah ada di dalam folder public/ sejak awal (dari struktur zip aslinya), jadi command mv yang saya kasih tadi gak perlu dijalankan lagi. Kamu sudah otomatis nyalin strukturnya dengan benar lewat cp -r.
 Cek dulu untuk pastikan:
 Kode
 ls public
@@ -73,7 +73,6 @@ Ekstrak, ambil file bin/php, pindahkan ke folder ~/Host-Minecraft/pocketmine den
 Lalu chmod +x php
 Coba jalankan cd pocketmine lalu ls, dan kirim hasilnya ke saya.
 
-Mantap, ini berhasil! 🎉 Server PocketMine-MP kamu sudah nyala dengan sukses:
 Done (2.935s)! For help, type "help" or "?" → server sudah jalan dan siap dipakai
 Network interface aktif di port 19132 (dan 19133 untuk IPv6)
 Game mode default: Survival
